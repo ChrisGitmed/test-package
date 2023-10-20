@@ -1,0 +1,13 @@
+{
+  "name": "test-package",
+  "type": "module",
+  "main": "./cjs/my-lib.js",
+  "module": "./esm/my-lib.js",
+  "exports": {
+    ".": {
+      "require":  "./cjs/my-lib.js",
+      "default": "./esm/my-lib.js"
+    }
+  },
+  "typings": "my-lib.d.ts"
+}
